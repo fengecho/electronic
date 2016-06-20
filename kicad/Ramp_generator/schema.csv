@@ -1,0 +1,11 @@
+Reference, Value, Footprint, Datasheet
+U2,DAC08,,
+R2,6.8k,,
+R1,6.8k,,
+C1,100n,,
+C2,10n,,
+C3,100n,,
+R3,4,7k,,
+U1,OP37G,,
+R4,12k,,
+C4,560p,,
