@@ -1,4 +1,4 @@
-All work in this repository is under the license bsd available [here] ()
+All work in this repository is under the license bsd available [here] (https://github.com/echopen/electronic/blob/master/LICENSE)
 
 # electronic
 
