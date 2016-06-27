@@ -1,0 +1,11 @@
+Reference, Value, Footprint, Datasheet
+R1,2800,,
+C1,10nF,,
+R2,1000,,
+R3,330,,
+T1,2N2222,,
+T2,2N2907A,,
+R4,330,,
+T3,2N2907A,,
+C2,1nF,,
+C3,33nF,,
