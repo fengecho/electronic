@@ -1,0 +1,5 @@
+Reference, Value, Footprint, Datasheet
+U1,FPGA_Pluto,,
+R1,47k,,
+R2,1k,,
+C1,10n,,
