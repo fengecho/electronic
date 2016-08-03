@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\Joris\Desktop\EchOpen\Download\Alimentation Symetrique\Schema\proto.sch</source>
-    <date>08/06/2016 15:32:37</date>
-    <tool>Eeschema 4.0.2-stable</tool>
+    <source>/home/echopen/Bureau/GitHub/electronic/kicad/Symetric supply/proto.sch</source>
+    <date>mer. 03 août 2016 10:38:15 CEST</date>
+    <tool>Eeschema 4.0.2+dfsg1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -346,119 +346,119 @@
   </libparts>
   <libraries>
     <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
-    </library>
-    <library logical="linear">
-      <uri>C:\Program Files\KiCad\share\kicad\library\linear.lib</uri>
+      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="regul">
-      <uri>C:\Program Files\KiCad\share\kicad\library\regul.lib</uri>
+      <uri>/usr/share/kicad/library/regul.lib</uri>
+    </library>
+    <library logical="linear">
+      <uri>/usr/share/kicad/library/linear.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="4" name="Net-(C2-Pad2)">
-      <node ref="R2" pin="2"/>
+    <net code="1" name="Net-(C2-Pad2)">
       <node ref="C2" pin="2"/>
       <node ref="U1" pin="6"/>
+      <node ref="R2" pin="2"/>
       <node ref="U1" pin="2"/>
     </net>
     <net code="6" name="Net-(2N2222-Pad1)">
       <node ref="R3" pin="1"/>
       <node ref="2N2222" pin="1"/>
     </net>
-    <net code="7" name="Net-(R3-Pad2)">
-      <node ref="U1" pin="3"/>
-      <node ref="R3" pin="2"/>
-    </net>
-    <net code="9" name="/12V">
-      <node ref="+5V1" pin="VI"/>
-      <node ref="C8" pin="1"/>
+    <net code="7" name="/12V">
       <node ref="+12V1" pin="VO"/>
+      <node ref="C8" pin="1"/>
+      <node ref="+5V1" pin="VI"/>
     </net>
-    <net code="14" name="Net-(R1-Pad1)">
-      <node ref="U1" pin="7"/>
-      <node ref="R1" pin="1"/>
-      <node ref="R2" pin="1"/>
+    <net code="10" name="Measure3.2">
+      <node ref="+5V1" pin="VO"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U1" pin="4"/>
     </net>
-    <net code="16" name="Net-(-12V1-PadVI)">
+    <net code="14" name="Measure1">
+      <node ref="R3" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="17" name="Net-(-12V1-PadVI)">
       <node ref="C4" pin="2"/>
       <node ref="1N400X3" pin="2"/>
       <node ref="-12V1" pin="VI"/>
     </net>
-    <net code="17" name="Net-(-12V1-PadVO)">
+    <net code="18" name="Net-(-12V1-PadVO)">
       <node ref="-12V1" pin="VO"/>
       <node ref="-5V1" pin="VI"/>
       <node ref="C5" pin="2"/>
     </net>
-    <net code="18" name="/-5V">
+    <net code="19" name="/-5V">
       <node ref="C6" pin="2"/>
       <node ref="-5V1" pin="VO"/>
     </net>
-    <net code="19" name="Net-(SW1-Pad1)">
+    <net code="20" name="Net-(SW1-Pad1)">
       <node ref="SW1" pin="1"/>
     </net>
-    <net code="20" name="VCC">
-      <node ref="C7" pin="1"/>
+    <net code="21" name="VCC">
       <node ref="+12V1" pin="VI"/>
-      <node ref="SW1" pin="2"/>
+      <node ref="C7" pin="1"/>
       <node ref="1N400X1" pin="1"/>
       <node ref="U1" pin="8"/>
+      <node ref="SW1" pin="2"/>
       <node ref="2N2222_1" pin="2"/>
       <node ref="R4" pin="1"/>
     </net>
-    <net code="21" name="Net-(1N400X1-Pad2)">
+    <net code="22" name="Net-(1N400X1-Pad2)">
       <node ref="1N400X1" pin="2"/>
       <node ref="SW1" pin="3"/>
     </net>
-    <net code="22" name="Net-(D5-Pad2)">
+    <net code="23" name="Net-(D5-Pad2)">
       <node ref="D5" pin="2"/>
       <node ref="R5" pin="1"/>
     </net>
-    <net code="23" name="GND">
-      <node ref="C4" pin="1"/>
+    <net code="24" name="GND">
       <node ref="2N2907" pin="2"/>
-      <node ref="1N400X2" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="-12V1" pin="GND"/>
-      <node ref="C1" pin="1"/>
-      <node ref="2N2222" pin="3"/>
-      <node ref="U1" pin="1"/>
+      <node ref="C4" pin="1"/>
       <node ref="C5" pin="1"/>
-      <node ref="+12V1" pin="GND"/>
-      <node ref="C9" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="+5V1" pin="GND"/>
-      <node ref="C6" pin="1"/>
+      <node ref="2N2222" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="1N400X2" pin="1"/>
+      <node ref="-12V1" pin="GND"/>
       <node ref="-5V1" pin="GND"/>
+      <node ref="+5V1" pin="GND"/>
       <node ref="D5" pin="1"/>
-    </net>
-    <net code="24" name="/5V">
-      <node ref="U1" pin="4"/>
-      <node ref="+5V1" pin="VO"/>
-      <node ref="C9" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="R5" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="+12V1" pin="GND"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C2" pin="1"/>
     </net>
     <net code="25" name="Net-(C1-Pad2)">
-      <node ref="C1" pin="2"/>
       <node ref="U1" pin="5"/>
+      <node ref="C1" pin="2"/>
     </net>
-    <net code="26" name="Net-(2N2222_1-Pad3)">
+    <net code="26" name="Net-(R1-Pad1)">
+      <node ref="U1" pin="7"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="27" name="Net-(1N400X2-Pad2)">
+      <node ref="1N400X2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="1N400X3" pin="1"/>
+    </net>
+    <net code="28" name="Measure2">
       <node ref="C3" pin="1"/>
       <node ref="2N2222_1" pin="3"/>
       <node ref="2N2907" pin="3"/>
     </net>
-    <net code="27" name="Net-(2N2222-Pad2)">
+    <net code="29" name="Net-(2N2222-Pad2)">
       <node ref="R4" pin="2"/>
       <node ref="2N2222_1" pin="1"/>
       <node ref="2N2222" pin="2"/>
       <node ref="2N2907" pin="1"/>
-    </net>
-    <net code="28" name="Net-(1N400X2-Pad2)">
-      <node ref="1N400X3" pin="1"/>
-      <node ref="1N400X2" pin="2"/>
-      <node ref="C3" pin="2"/>
     </net>
   </nets>
 </export>
