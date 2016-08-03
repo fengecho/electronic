@@ -1,0 +1,38 @@
+Source,/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Supply/V1.0/Supply_v1_0.sch
+Kicad Rev,Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable
+Generated Date,mer. 03 août 2016 18:09:10 CEST
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+U1,LM555N,linear,LM555N
+C1,10n,device,C
+R2,12k,device,R
+R1,2.2k,device,R
+1N400X1,D,device,D
+C3,220u,device,C
+C4,47u,device,C
+C5,47u,device,C
+R5,270,device,R
+D1,LED,device,LED
+2N1,Q_NPN_BCE,device,Q_NPN_BCE
+R4,1.8k,device,R
+2N2222_1,Q_NPN_BCE,device,Q_NPN_BCE
+2N2,Q_PNP_BCE,device,Q_PNP_BCE
+C7,47u,device,CP
+1N400X2,D,device,D
+1N400X3,D,device,D
+C8,47u,device,CP
+C9,47u,device,CP
+R3,3.3k,device,R
+C2,47n,device,C
+U5,LM2990T-12,regul,78L05
+U6,LM2990T-5,regul,78L05
+C10,47u,device,CP
+U2,LM2940CT-12,regul,78L05
+U3,LM2940CT-5,regul,78L05
+U4,LM1117T-3.3,regul,78L05
+C6,47u,device,CP
