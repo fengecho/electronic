@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:/Users/Joris/Desktop/EchOpen/FPGA/Quartus_DACControl/Schematic/schema.sch</source>
-    <date>19/07/2016 18:44:55</date>
-    <tool>Eeschema 4.0.2-stable</tool>
+    <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Ramp/Ramp_generator_FPGA_and_DAC_module/schema.sch</source>
+    <date>ven. 05 août 2016 16:42:54 CEST</date>
+    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -222,17 +222,17 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="adc-dac">
-      <uri>C:\Program Files\KiCad\share\kicad\library\adc-dac.lib</uri>
-    </library>
-    <library logical="device">
-      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
-    </library>
     <library logical="linear">
-      <uri>C:\Program Files\KiCad\share\kicad\library\linear.lib</uri>
+      <uri>/usr/share/kicad/library/linear.lib</uri>
     </library>
     <library logical="echopen">
-      <uri>C:\Users\Joris\Desktop\EchOpen\lib_Kicad\echopen.lib</uri>
+      <uri>/home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="adc-dac">
+      <uri>/usr/share/kicad/library/adc-dac.lib</uri>
     </library>
   </libraries>
   <nets>

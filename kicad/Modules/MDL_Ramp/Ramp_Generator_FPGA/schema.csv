@@ -1,6 +1,6 @@
-Source,/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Ramp/Simple_Ramp_Generator_FPGA/schema.sch
+Source,/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Ramp/Ramp_Generator_FPGA/schema.sch
 Kicad Rev,Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable
-Generated Date,ven. 05 août 2016 16:44:31 CEST
+Generated Date,ven. 05 août 2016 16:40:51 CEST
 
 Title,Not Set
 Company,Not Set
@@ -9,6 +9,5 @@ Date Issue,Not Set
 
 Reference,Value,Library,Library Ref
 U1,FPGA_Pluto,echopen,FPGA_Pluto
-R1,47k,device,R
-R2,1k,device,R
+R1,6.8k,device,R
 C1,10n,device,C

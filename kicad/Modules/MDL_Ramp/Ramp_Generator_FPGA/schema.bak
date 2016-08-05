@@ -30,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:schema-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -109,4 +110,8 @@ Wire Wire Line
 	4000 1900 4350 1900
 Text GLabel 3700 1950 0    60   Input ~ 0
 Output
+Text Label 7450 7500 0    60   ~ 0
+Ramp_generator_with_FPGA
+Text Label 8250 7650 0    60   ~ 0
+2016/07/08
 $EndSCHEMATC

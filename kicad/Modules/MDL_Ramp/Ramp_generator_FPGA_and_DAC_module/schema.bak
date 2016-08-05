@@ -359,9 +359,9 @@ Wire Wire Line
 Wire Wire Line
 	7400 3350 7700 3350
 Text Label 7400 7500 0    60   ~ 0
-Ramp_Generator_With_NucleoF401RE_&_DAC0800
+Ramp_Generator_With_FPGA_Pluto_&_DAC0800
 Text Label 8150 7650 0    60   ~ 0
-June_13_2016
+July_20_2016
 $Comp
 L FPGA_Pluto U3
 U 1 1 578E57AB
