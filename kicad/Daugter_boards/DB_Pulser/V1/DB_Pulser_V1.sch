@@ -451,4 +451,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 3950 2050 3950
 NoConn ~ 2200 3950
+Text GLabel 8350 4800 2    60   Input ~ 0
+OUTPUT
 $EndSCHEMATC
