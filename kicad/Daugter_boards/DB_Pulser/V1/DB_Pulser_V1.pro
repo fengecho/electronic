@@ -1,4 +1,4 @@
-update=08/08/2016 15:01:56
+update=lun. 08 août 2016 16:19:48 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../../Librairy
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,4 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=C:/Users/Joris/Desktop/EchOpen/GitHub/electronic/kicad/Librairy/echopen
+LibName30=/home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen

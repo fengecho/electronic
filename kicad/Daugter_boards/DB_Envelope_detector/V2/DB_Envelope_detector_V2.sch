@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:DB_Envelope_detector_V2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -200,10 +201,6 @@ Connection ~ 6750 4800
 Wire Wire Line
 	6750 4400 6750 4350
 Connection ~ 6750 4350
-Text Label 7200 4800 0    60   ~ 0
--5V
-Text Label 7200 3150 0    60   ~ 0
-+5V
 Wire Wire Line
 	5700 4800 7450 4800
 Wire Wire Line
@@ -245,7 +242,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 4550 7550 4350
 Wire Wire Line
-	5250 4950 3650 4950
+	3650 4950 8300 4950
 Wire Wire Line
 	8300 4850 7750 4850
 Wire Wire Line
@@ -257,4 +254,5 @@ Wire Wire Line
 NoConn ~ 7750 3250
 NoConn ~ 7750 4550
 NoConn ~ 7450 4350
+Connection ~ 5250 4950
 $EndSCHEMATC
