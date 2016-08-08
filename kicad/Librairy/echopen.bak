@@ -71,10 +71,10 @@ DRAW
 C 0 0 424 0 1 0 N
 X Moteur+(red) 1 -550 300 252 R 50 50 1 1 I
 X Moteur-(black) 2 -550 200 177 R 50 50 1 1 I
-X Supply(orange) 3 -550 100 138 R 50 50 1 1 I
-X Encodor1(blue) 4 -550 0 126 R 50 50 1 1 I
-X Encodor2(violet) 5 -550 -100 138 R 50 50 1 1 I
-X GND 6 -550 -200 173 R 50 50 1 1 I
+X GND(brown) 3 -550 100 138 R 50 50 1 1 I
+X Supply(green) 4 -550 0 126 R 50 50 1 1 I
+X Encodor1(blue) 5 -550 -100 138 R 50 50 1 1 I
+X Encodor2(violet) 6 -550 -200 173 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
