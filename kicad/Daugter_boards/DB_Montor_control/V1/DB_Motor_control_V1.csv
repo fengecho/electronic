@@ -1,0 +1,12 @@
+Reference, Value, Footprint, Datasheet
+R2,1k,,
+D1,400x,,
+Q1,Q2N2222,,
+R1,680,,
+R5,2.2k,,
+R4,330,,
+R3,33k,,
+P2,CONN_01X05,,
+P3,CONN_01X03,,
+P1,CONN_01X19,,
+P4,CONN_01X19,,

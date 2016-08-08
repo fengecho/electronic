@@ -1,0 +1,198 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:echopen
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7300 7475 0    59   ~ 0
+Stepper motor control with driver A4988 and Microcontroller Arduino NanoATmega168
+$Comp
+L CONN_01X04 P6
+U 1 1 57A88E2B
+P 6650 4050
+F 0 "P6" H 6650 4300 50  0000 C CNN
+F 1 "CONN_01X04" V 6750 4050 50  0000 C CNN
+F 2 "" H 6650 4050 50  0000 C CNN
+F 3 "" H 6650 4050 50  0000 C CNN
+	1    6650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P4
+U 1 1 57A89055
+P 5550 4050
+F 0 "P4" H 5550 4500 50  0000 C CNN
+F 1 "CONN_01X08" V 5650 4050 50  0000 C CNN
+F 2 "" H 5550 4050 50  0000 C CNN
+F 3 "" H 5550 4050 50  0000 C CNN
+	1    5550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P5
+U 1 1 57A8907E
+P 5950 4050
+F 0 "P5" H 5950 4500 50  0000 C CNN
+F 1 "CONN_01X08" V 6050 4050 50  0000 C CNN
+F 2 "" H 5950 4050 50  0000 C CNN
+F 3 "" H 5950 4050 50  0000 C CNN
+	1    5950 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X15 P2
+U 1 1 57A890C3
+P 3800 3900
+F 0 "P2" H 3800 4700 50  0000 C CNN
+F 1 "CONN_01X15" V 3900 3900 50  0000 C CNN
+F 2 "" H 3800 3900 50  0000 C CNN
+F 3 "" H 3800 3900 50  0000 C CNN
+	1    3800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X15 P3
+U 1 1 57A890ED
+P 4500 3900
+F 0 "P3" H 4500 4700 50  0000 C CNN
+F 1 "CONN_01X15" V 4600 3900 50  0000 C CNN
+F 2 "" H 4500 3900 50  0000 C CNN
+F 3 "" H 4500 3900 50  0000 C CNN
+	1    4500 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X19 P7
+U 1 1 57A8A591
+P 7350 3750
+F 0 "P7" H 7350 4750 50  0000 C CNN
+F 1 "CONN_01X19" V 7450 3750 50  0000 C CNN
+F 2 "" H 7350 3750 50  0000 C CNN
+F 3 "" H 7350 3750 50  0000 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X19 P1
+U 1 1 57A8A60C
+P 3050 3800
+F 0 "P1" H 3050 4800 50  0000 C CNN
+F 1 "CONN_01X19" V 3150 3800 50  0000 C CNN
+F 2 "" H 3050 3800 50  0000 C CNN
+F 3 "" H 3050 3800 50  0000 C CNN
+	1    3050 3800
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 7050 2950
+NoConn ~ 3450 4300
+NoConn ~ 7050 3350
+NoConn ~ 6950 3350
+NoConn ~ 6950 3800
+$Comp
+L CP C1
+U 1 1 57A8ABF6
+P 6350 3200
+F 0 "C1" H 6375 3300 50  0000 L CNN
+F 1 "100u" H 6375 3100 50  0000 L CNN
+F 2 "" H 6388 3050 50  0000 C CNN
+F 3 "" H 6350 3200 50  0000 C CNN
+	1    6350 3200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5350 4100 5350 4200
+Wire Wire Line
+	5350 4400 4700 4400
+Wire Wire Line
+	5350 4300 4700 4300
+Wire Wire Line
+	5350 4000 4700 4000
+Wire Wire Line
+	5350 3900 4700 3900
+Wire Wire Line
+	5350 3800 4700 3800
+Wire Wire Line
+	5350 3700 4700 3700
+Wire Wire Line
+	6450 3900 6150 3900
+Wire Wire Line
+	6150 4000 6450 4000
+Wire Wire Line
+	6450 4100 6150 4100
+Wire Wire Line
+	6150 4200 6450 4200
+Wire Wire Line
+	3600 4300 3350 4300
+Wire Wire Line
+	3350 4300 3350 3000
+Wire Wire Line
+	3350 3000 3250 3000
+Wire Wire Line
+	3600 4500 3450 4500
+Wire Wire Line
+	3450 4500 3450 2900
+Wire Wire Line
+	3450 2900 3250 2900
+Wire Wire Line
+	6150 4300 6950 4300
+Wire Wire Line
+	6950 4300 6950 2950
+Wire Wire Line
+	6950 2950 7150 2950
+Wire Wire Line
+	6150 4400 7050 4400
+Wire Wire Line
+	7050 4400 7050 2850
+Wire Wire Line
+	6350 2850 7150 2850
+Wire Wire Line
+	7150 3350 6150 3350
+Wire Wire Line
+	6150 3350 6150 3700
+Wire Wire Line
+	6150 3800 7050 3800
+Connection ~ 7050 3800
+Wire Wire Line
+	6350 2850 6350 3050
+Connection ~ 7050 2850
+Connection ~ 6350 3350
+$EndSCHEMATC
