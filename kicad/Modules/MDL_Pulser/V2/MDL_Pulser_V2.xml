@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Pulser/V2/MDL_Pulser_V2.sch</source>
-    <date>jeu. 04 août 2016 12:17:04 CEST</date>
-    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable</tool>
+    <date>mar. 09 août 2016 09:50:04 CEST</date>
+    <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -79,10 +79,10 @@
     <net code="6" name="12V">
       <node ref="U1" pin="20"/>
     </net>
-    <net code="7" name="-100V">
+    <net code="7" name="OUTPUT">
       <node ref="U1" pin="21"/>
     </net>
-    <net code="8" name="OUTPUT">
+    <net code="8" name="-100V">
       <node ref="U1" pin="25"/>
     </net>
     <net code="9" name="Net-(U1-Pad~)">
