@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:echopen
+LIBS:MDL_Pulser_V2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -93,7 +94,7 @@ Text GLabel 4400 2250 2    60   Input ~ 0
 Wire Wire Line
 	5950 2800 6150 2800
 Text GLabel 6150 2800 2    60   Input ~ 0
--100V
+OUTPUT
 Wire Wire Line
 	5950 3600 4600 3600
 Wire Wire Line
@@ -102,5 +103,5 @@ Connection ~ 4250 3400
 Wire Wire Line
 	5950 3500 6150 3500
 Text GLabel 6150 3500 2    60   Input ~ 0
-OUTPUT
+-100V
 $EndSCHEMATC
