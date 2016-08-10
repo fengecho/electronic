@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Supply/V1.0/Supply_v1_0.sch</source>
-    <date>mer. 03 août 2016 18:09:10 CEST</date>
-    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable</tool>
+    <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Supply/V1/Supply_v1_0.sch</source>
+    <date>mer. 10 août 2016 15:04:56 CEST</date>
+    <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -43,8 +43,8 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A0AD9</tstamp>
     </comp>
-    <comp ref="1N400X1">
-      <value>D</value>
+    <comp ref="D2">
+      <value>1N4001</value>
       <libsource lib="device" part="D"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A15CB</tstamp>
@@ -79,8 +79,8 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A253C</tstamp>
     </comp>
-    <comp ref="2N1">
-      <value>Q_NPN_BCE</value>
+    <comp ref="Q1">
+      <value>Q2N2222</value>
       <libsource lib="device" part="Q_NPN_BCE"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A387C</tstamp>
@@ -91,14 +91,14 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A39CF</tstamp>
     </comp>
-    <comp ref="2N2222_1">
-      <value>Q_NPN_BCE</value>
+    <comp ref="Q2">
+      <value>Q2N2222</value>
       <libsource lib="device" part="Q_NPN_BCE"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A3ACF</tstamp>
     </comp>
-    <comp ref="2N2">
-      <value>Q_PNP_BCE</value>
+    <comp ref="Q3">
+      <value>Q2N2907</value>
       <libsource lib="device" part="Q_PNP_BCE"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A3B5B</tstamp>
@@ -109,14 +109,14 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A3DB6</tstamp>
     </comp>
-    <comp ref="1N400X2">
-      <value>D</value>
+    <comp ref="D3">
+      <value>1N4001</value>
       <libsource lib="device" part="D"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A3EDF</tstamp>
     </comp>
-    <comp ref="1N400X3">
-      <value>D</value>
+    <comp ref="D4">
+      <value>1N4001</value>
       <libsource lib="device" part="D"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A4183</tstamp>
@@ -145,41 +145,11 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>572A0580</tstamp>
     </comp>
-    <comp ref="U5">
-      <value>LM2990T-12</value>
-      <libsource lib="regul" part="78L05"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>575A0CF3</tstamp>
-    </comp>
-    <comp ref="U6">
-      <value>LM2990T-5</value>
-      <libsource lib="regul" part="78L05"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>575A10F8</tstamp>
-    </comp>
     <comp ref="C10">
       <value>47u</value>
       <libsource lib="device" part="CP"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>575A1244</tstamp>
-    </comp>
-    <comp ref="U2">
-      <value>LM2940CT-12</value>
-      <libsource lib="regul" part="78L05"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>575A672C</tstamp>
-    </comp>
-    <comp ref="U3">
-      <value>LM2940CT-5</value>
-      <libsource lib="regul" part="78L05"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>575A9393</tstamp>
-    </comp>
-    <comp ref="U4">
-      <value>LM1117T-3.3</value>
-      <libsource lib="regul" part="78L05"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>57A2E6B8</tstamp>
     </comp>
     <comp ref="C6">
       <value>47u</value>
@@ -187,26 +157,38 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57A2E7D0</tstamp>
     </comp>
+    <comp ref="U2">
+      <value>LM2940T-12.0/NOPB</value>
+      <libsource lib="echopen" part="LM2940T-12.0/NOPB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57AB3A8D</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LM2940T-5.0/NOPB</value>
+      <libsource lib="echopen" part="LM2940T-5.0/NOPB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57AB3B35</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>LM1117T-3.3/NOPB</value>
+      <libsource lib="echopen" part="LM1117T-3.3/NOPB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57AB3BF3</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LM2990T-12.0/NOPB</value>
+      <libsource lib="echopen" part="LM2990T-12.0/NOPB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57AB439B</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>LM2990T-5.0/NOPB</value>
+      <libsource lib="echopen" part="LM2990T-5.0/NOPB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57AB44AB</tstamp>
+    </comp>
   </components>
   <libparts>
-    <libpart lib="regul" part="7805">
-      <aliases>
-        <alias>LM7805</alias>
-        <alias>LM7812</alias>
-        <alias>78L05</alias>
-      </aliases>
-      <description>Linear Regulator +5V</description>
-      <docs>regulator\lm78xx.pdf</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">7805</field>
-      </fields>
-      <pins>
-        <pin num="GND" name="GND" type="input"/>
-        <pin num="VI" name="VI" type="input"/>
-        <pin num="VO" name="VO" type="power_out"/>
-      </pins>
-    </libpart>
     <libpart lib="device" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -281,6 +263,69 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="echopen" part="LM1117T-3.3/NOPB">
+      <description>Linear Regulator +3.3V</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM1117T-3.3/NOPB</field>
+      </fields>
+      <pins>
+        <pin num="GND" name="GND" type="input"/>
+        <pin num="VI" name="VI" type="input"/>
+        <pin num="VO" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="echopen" part="LM2940T-12.0/NOPB">
+      <description>Linear Regulator +12V</description>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2940T-12.0/NOPB</field>
+      </fields>
+      <pins>
+        <pin num="GND" name="GND" type="input"/>
+        <pin num="VI" name="VI" type="input"/>
+        <pin num="VO" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="echopen" part="LM2940T-5.0/NOPB">
+      <description>Linear Regulator +5V</description>
+      <docs>regulator\lm78xx.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2940T-5.0/NOPB</field>
+      </fields>
+      <pins>
+        <pin num="GND" name="GND" type="input"/>
+        <pin num="VI" name="VI" type="input"/>
+        <pin num="VO" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="echopen" part="LM2990T-12.0/NOPB">
+      <description>Linear Regulator -12V</description>
+      <docs>regulator\lm78xx.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2990T-12.0/NOPB</field>
+      </fields>
+      <pins>
+        <pin num="GND" name="GND" type="input"/>
+        <pin num="VI" name="VI" type="input"/>
+        <pin num="VO" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="echopen" part="LM2990T-5.0/NOPB">
+      <description>Linear Regulator -5V</description>
+      <docs>regulator\lm78xx.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2990T-5.0/NOPB</field>
+      </fields>
+      <pins>
+        <pin num="GND" name="GND" type="input"/>
+        <pin num="VI" name="VI" type="input"/>
+        <pin num="VO" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
     <libpart lib="linear" part="LM555N">
       <docs>ns/lm555.pdf</docs>
       <fields>
@@ -339,122 +384,122 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
-    </library>
     <library logical="linear">
       <uri>/usr/share/kicad/library/linear.lib</uri>
     </library>
-    <library logical="regul">
-      <uri>/usr/share/kicad/library/regul.lib</uri>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="echopen">
+      <uri>/home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(2N2-Pad3)">
+    <net code="1" name="Net-(C7-Pad1)">
       <node ref="C7" pin="1"/>
-      <node ref="2N2" pin="3"/>
-      <node ref="2N2222_1" pin="3"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="Q2" pin="3"/>
     </net>
-    <net code="2" name="Net-(R3-Pad2)">
+    <net code="2" name="Net-(Q1-Pad2)">
+      <node ref="Q2" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="3" name="Net-(R3-Pad2)">
       <node ref="U1" pin="3"/>
       <node ref="R3" pin="2"/>
     </net>
-    <net code="3" name="Net-(C2-Pad2)">
-      <node ref="R2" pin="2"/>
-      <node ref="U1" pin="6"/>
+    <net code="4" name="Net-(C2-Pad2)">
       <node ref="U1" pin="2"/>
+      <node ref="U1" pin="6"/>
+      <node ref="R2" pin="2"/>
       <node ref="C2" pin="2"/>
     </net>
-    <net code="4" name="Net-(C1-Pad2)">
-      <node ref="C1" pin="2"/>
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="5" name="Net-(2N1-Pad2)">
-      <node ref="2N1" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="2N2222_1" pin="1"/>
-      <node ref="2N2" pin="1"/>
-    </net>
-    <net code="6" name="VCC">
-      <node ref="U1" pin="8"/>
-      <node ref="1N400X1" pin="2"/>
-    </net>
-    <net code="11" name="3.3V">
-      <node ref="U4" pin="VO"/>
+    <net code="5" name="3.3V">
       <node ref="C6" pin="1"/>
+      <node ref="U4" pin="VO"/>
     </net>
-    <net code="12" name="Net-(R1-Pad1)">
-      <node ref="U1" pin="7"/>
-      <node ref="R2" pin="1"/>
-      <node ref="R1" pin="1"/>
+    <net code="6" name="12V">
+      <node ref="U3" pin="VI"/>
+      <node ref="U2" pin="VO"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U4" pin="VI"/>
     </net>
-    <net code="13" name="Net-(D1-Pad2)">
-      <node ref="R5" pin="1"/>
-      <node ref="D1" pin="2"/>
+    <net code="7" name="Net-(C8-Pad2)">
+      <node ref="U5" pin="VI"/>
+      <node ref="C8" pin="2"/>
+      <node ref="D4" pin="2"/>
     </net>
-    <net code="14" name="Net-(2N1-Pad1)">
-      <node ref="2N1" pin="1"/>
-      <node ref="R3" pin="1"/>
-    </net>
-    <net code="15" name="Net-(1N400X2-Pad2)">
-      <node ref="1N400X2" pin="2"/>
-      <node ref="1N400X3" pin="1"/>
-      <node ref="C7" pin="2"/>
-    </net>
-    <net code="16" name="5V">
-      <node ref="C5" pin="1"/>
-      <node ref="R5" pin="2"/>
-      <node ref="U3" pin="VO"/>
-      <node ref="U1" pin="4"/>
-      <node ref="R1" pin="2"/>
-    </net>
-    <net code="20" name="Net-(1N400X1-Pad1)">
-      <node ref="2N2222_1" pin="2"/>
-      <node ref="1N400X1" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="U2" pin="VI"/>
-    </net>
-    <net code="21" name="-12V">
-      <node ref="C9" pin="2"/>
+    <net code="8" name="-12V">
       <node ref="U6" pin="VI"/>
+      <node ref="C9" pin="2"/>
       <node ref="U5" pin="VO"/>
     </net>
-    <net code="22" name="-5V">
+    <net code="9" name="-5V">
       <node ref="C10" pin="2"/>
       <node ref="U6" pin="VO"/>
     </net>
-    <net code="23" name="12V">
-      <node ref="U4" pin="VI"/>
-      <node ref="U2" pin="VO"/>
-      <node ref="C4" pin="1"/>
-      <node ref="U3" pin="VI"/>
+    <net code="10" name="VCC">
+      <node ref="U1" pin="8"/>
+      <node ref="D2" pin="2"/>
     </net>
-    <net code="24" name="Net-(1N400X3-Pad2)">
-      <node ref="1N400X3" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="U5" pin="VI"/>
-    </net>
-    <net code="28" name="GND">
-      <node ref="U4" pin="GND"/>
-      <node ref="C2" pin="1"/>
-      <node ref="U3" pin="GND"/>
-      <node ref="C6" pin="2"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C9" pin="1"/>
+    <net code="15" name="GND">
+      <node ref="Q1" pin="3"/>
       <node ref="D1" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="C5" pin="2"/>
       <node ref="C4" pin="2"/>
-      <node ref="2N1" pin="3"/>
-      <node ref="C3" pin="2"/>
-      <node ref="2N2" pin="2"/>
-      <node ref="1N400X2" pin="1"/>
       <node ref="C1" pin="1"/>
-      <node ref="U2" pin="GND"/>
+      <node ref="D3" pin="1"/>
       <node ref="C10" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C3" pin="2"/>
       <node ref="U6" pin="GND"/>
       <node ref="U5" pin="GND"/>
+      <node ref="U4" pin="GND"/>
+      <node ref="U3" pin="GND"/>
+      <node ref="U2" pin="GND"/>
+    </net>
+    <net code="16" name="Net-(D1-Pad2)">
+      <node ref="R5" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="17" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="18" name="Net-(C3-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="U2" pin="VI"/>
+      <node ref="C3" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="19" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="20" name="5V">
+      <node ref="U3" pin="VO"/>
+      <node ref="U1" pin="4"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="21" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="24" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="7"/>
+      <node ref="R2" pin="1"/>
     </net>
   </nets>
 </export>
