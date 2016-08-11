@@ -1,6 +1,6 @@
 Source,/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_TR_switch/V1/MDL_TR_switch_V1.sch
-Kicad Rev,Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable
-Generated Date,ven. 05 août 2016 13:01:40 CEST
+Kicad Rev,Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable
+Generated Date,mer. 10 août 2016 15:31:26 CEST
 
 Title,Not Set
 Company,Not Set
@@ -8,6 +8,6 @@ Revision,Not Set
 Date Issue,Not Set
 
 Reference,Value,Library,Library Ref
-U1,MD0100,MDL_TR_switch_V1-cache,MD0100
+U1,MD0100,echopen,MD0100
 D1,1N4148,device,D
 D2,IN4148,device,D

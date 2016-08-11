@@ -60,7 +60,7 @@ U 1 1 57A4D538
 P 3350 2350
 F 0 "R1" V 3430 2350 50  0000 C CNN
 F 1 "3.9k" V 3350 2350 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 3280 2350 50  0001 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Cement_Horizontal_Meggitt-SBC-2" V 3280 2350 50  0001 C CNN
 F 3 "" H 3350 2350 50  0000 C CNN
 	1    3350 2350
 	1    0    0    -1  

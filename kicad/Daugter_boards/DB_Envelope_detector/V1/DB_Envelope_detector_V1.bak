@@ -116,6 +116,42 @@ Connection ~ 3600 2200
 Wire Wire Line
 	3500 2500 3500 3300
 Wire Wire Line
-	3500 3300 2200 3300
+	2200 3300 4500 3300
 Connection ~ 3500 2500
+Connection ~ 3500 3300
+NoConn ~ 2200 1500
+NoConn ~ 2200 1600
+NoConn ~ 2200 1700
+NoConn ~ 2200 1800
+NoConn ~ 2200 1900
+NoConn ~ 2200 2000
+NoConn ~ 2200 2100
+NoConn ~ 2200 2200
+NoConn ~ 2200 2300
+NoConn ~ 2200 2400
+NoConn ~ 2200 2500
+NoConn ~ 2200 2600
+NoConn ~ 2200 2700
+NoConn ~ 2200 2800
+NoConn ~ 2200 2900
+NoConn ~ 2200 3100
+NoConn ~ 2200 3200
+NoConn ~ 4500 3200
+NoConn ~ 4500 3100
+NoConn ~ 4500 3000
+NoConn ~ 4500 2800
+NoConn ~ 4500 2700
+NoConn ~ 4500 2600
+NoConn ~ 4500 2500
+NoConn ~ 4500 2400
+NoConn ~ 4500 2300
+NoConn ~ 4500 2200
+NoConn ~ 4500 2100
+NoConn ~ 4500 2000
+NoConn ~ 4500 1900
+NoConn ~ 4500 1800
+NoConn ~ 4500 1700
+NoConn ~ 4500 1600
+NoConn ~ 4500 1500
+Connection ~ 3350 2200
 $EndSCHEMATC
