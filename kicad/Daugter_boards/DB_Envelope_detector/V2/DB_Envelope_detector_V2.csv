@@ -1,13 +1,22 @@
-Reference, Value, Footprint, Datasheet
-R1,2800,,
-C1,10nF,,
-R2,1000,,
-R3,330,,
-T1,2N2222,,
-T2,2N2907A,,
-R4,330,,
-T3,2N2907A,,
-C2,1nF,,
-C3,33nF,,
-P1,CONN_01X19,,
-P2,CONN_01X19,,
+Source,/home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Envelope_detector/V2/DB_Envelope_detector_V2.sch
+Kicad Rev,Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable
+Generated Date,jeu. 11 août 2016 17:34:07 CEST
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+R1,2800,device,R
+C1,10nF,device,C
+R2,1000,device,R
+R3,330,device,R
+T1,2N2222,device,Q_NPN_BCE
+T2,2N2907A,device,Q_PNP_BCE
+R4,330,device,R
+T3,2N2907A,device,Q_PNP_BCE
+C2,1nF,device,C
+C3,33nF,device,C
+P1,CONN_01X19,conn,CONN_01X19
+P2,CONN_01X19,conn,CONN_01X19
