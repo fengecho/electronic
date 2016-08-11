@@ -11,3 +11,5 @@ become:
 xsltproc -o "%O.csv" "/usr/lib/kicad/plugins/bom2csv.xsl" "%I"
 
 to improve the BOM output one can for example use the tool in http://www.hashdefineelectronics.com/kicad-bom-wizard/
+
+When you to make a PCB for the first time, go to your Eschema file and click on the CvPcb icon. In the new window, click on the Preferences menu and select Footprint Librairies. In the new window delete all the librairies that are listed (there is not the librairies install on the computer and you will have error when you will want to associate footprint) then click on Append with wizard. Now you use the online librairies. Now you can associate the footprints with the component, enjoy.
