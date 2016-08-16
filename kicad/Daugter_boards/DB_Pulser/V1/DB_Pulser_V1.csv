@@ -1,26 +1,38 @@
-Reference, Value, Footprint, Datasheet
-R2,22,,
-C1,100p,,
-C5,220p,,
-D1,BAT48 0.6V,,
-D3,D1N4148,,
-R6,100k,,
-R1,1k,,
-Q1,Q2N2222,,
-Q2,Q2N2907,,
-Q4,Q2N2907,,
-Q6,Q2N2907,,
-Q3,Q2N2222,,
-Q5,Q2N2222,,
-C2,100n,,
-C4,100n,,
-D5,BZD23-18,,
-D2,BZD23-18,,
-R5,1M,,
-R3,1M,,
-Q7,IRF9610,,
-Q8,IRF610,,
-P1,CONN_01X19,,
-P3,CONN_01X19,,
-U1,SMA,,
-P2,CONN_01X02,,
+Source,/home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Pulser/V1/DB_Pulser_V1.sch
+Kicad Rev,Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable
+Generated Date,mar. 16 août 2016 18:28:25 CEST
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+R2,22,device,R
+C1,100p,device,C
+C5,220p,device,C
+D1,BAT48 0.6V,device,D_Schottky
+D3,D1N4148,device,D
+R6,100k,device,R
+R1,1k,device,R
+Q1,Q2N2222,device,Q_NPN_EBC
+Q2,Q2N2907,device,Q_PNP_EBC
+Q4,Q2N2907,device,Q_PNP_EBC
+Q6,Q2N2907,device,Q_PNP_EBC
+Q3,Q2N2222,device,Q_NPN_EBC
+Q5,Q2N2222,device,Q_NPN_EBC
+C2,100n,device,C
+C4,100n,device,C
+D5,BZD23-18,device,ZENER
+D2,BZD23-18,device,ZENER
+R5,1M,device,R
+R3,1M,device,R
+Q7,IRF9610,device,Q_PMOS_GDS
+Q8,IRF610,device,Q_NMOS_GDS
+P1,CONN_01X19,conn,CONN_01X19
+P3,CONN_01X19,conn,CONN_01X19
+U1,SMA,echopen,SMA
+P2,CONN_01X02,conn,CONN_01X02
+P4,CONN_01X02,conn,CONN_01X02
+P5,SMA,echopen,SMA
+C3,33u,device,CP

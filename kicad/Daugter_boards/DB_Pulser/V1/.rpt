@@ -1,0 +1,32 @@
+** Drc report for /home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Pulser/V1/DB_Pulser_V1.kicad_pcb **
+** Created on 2016-08-16 18:00:04 **
+
+** Found 1 DRC errors **
+ErrType(4): Track near pad
+    @ (2,9500 in,4,3000 in): Track 0,0098 in, net [Net-(D5-Pad1)] (11) on layer B.Cu, length: 0,5499 in
+    @ (2,9000 in,4,0500 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of R5
+
+** Found 7 unconnected pads **
+ErrType(2): Unconnected pads
+    @ (2,9000 in,3,2500 in): Pad 2 on B.Cu, Non-copper of P5 net GND
+    @ (2,9000 in,3,2500 in): Pad 2 on F.Cu, Non-copper of P5
+ErrType(2): Unconnected pads
+    @ (2,5000 in,3,2500 in): Pad 2 on B.Cu, Non-copper of P5 net GND
+    @ (2,5000 in,3,2500 in): Pad 2 on F.Cu, Non-copper of P5
+ErrType(2): Unconnected pads
+    @ (2,6500 in,4,4500 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q4 net GND
+    @ (2,4500 in,4,2500 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q6
+ErrType(2): Unconnected pads
+    @ (2,4500 in,4,2500 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q6 net GND
+    @ (2,3500 in,3,9000 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of Q1
+ErrType(2): Unconnected pads
+    @ (2,7500 in,5,0000 in): Pad 2 on B.Cu, Non-copper of U1 net GND
+    @ (2,7500 in,5,0000 in): Pad 2 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (2,3500 in,5,0000 in): Pad 2 on B.Cu, Non-copper of U1 net GND
+    @ (2,3500 in,5,0000 in): Pad 2 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (2,3000 in,3,2500 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of P4 net Net-(P4-Pad1)
+    @ (2,7000 in,3,2500 in): Pad 1 on F.Cu, Non-copper of P5
+
+** End of Report **
