@@ -1,9 +1,18 @@
-Reference, Value, Footprint, Datasheet
-P6,CONN_01X04,,
-P4,CONN_01X08,,
-P5,CONN_01X08,,
-P2,CONN_01X15,,
-P3,CONN_01X15,,
-P7,CONN_01X19,,
-P1,CONN_01X19,,
-C1,100u,,
+Source,/home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Motor_control/V2/DB_Motor_control_V2.sch
+Kicad Rev,Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable
+Generated Date,mar. 16 août 2016 15:58:06 CEST
+
+Title,Not Set
+Company,Not Set
+Revision,Not Set
+Date Issue,Not Set
+
+Reference,Value,Library,Library Ref
+P6,CONN_01X04,conn,CONN_01X04
+P4,CONN_01X08,conn,CONN_01X08
+P5,CONN_01X08,conn,CONN_01X08
+P2,CONN_01X15,conn,CONN_01X15
+P3,CONN_01X15,conn,CONN_01X15
+P7,CONN_01X19,conn,CONN_01X19
+P1,CONN_01X19,conn,CONN_01X19
+C1,100u,device,CP

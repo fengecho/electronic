@@ -1,0 +1,11 @@
+** Drc report for /home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Motor_control/V1/DB_Motor_control_V1.kicad_pcb **
+** Created on 2016-08-16 15:18:00 **
+
+** Found 0 DRC errors **
+
+** Found 1 unconnected pads **
+ErrType(2): Unconnected pads
+    @ (2,7500 in,4,2500 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q1 net GND
+    @ (2,9000 in,3,8500 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of P2
+
+** End of Report **
