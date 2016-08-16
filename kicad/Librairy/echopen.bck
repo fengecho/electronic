@@ -16,10 +16,22 @@ K POWER REGUL
 F regulator\lm78xx.pdf
 $ENDCMP
 #
+$CMP LM2990T-12.0/NOPB
+D Linear Regulator -12V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
 $CMP LM2990T-5.0/NOPB
 D Linear Regulator -5V
 K POWER REGUL
 F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP QN2222
+D 40V Vce, 1A Ic, NPN, General Purpose Transistor, TO-92
+K NPN Transistor
+F http://www.fairchildsemi.com/ds/PN/PN2222A.pdf
 $ENDCMP
 #
 #End Doc Library
