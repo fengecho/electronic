@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Envelope_detector/V2/projet.sch</source>
-    <date>ven. 05 août 2016 15:00:15 CEST</date>
-    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable</tool>
+    <date>mer. 17 août 2016 11:14:29 CEST</date>
+    <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -43,29 +43,11 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>576BE62A</tstamp>
     </comp>
-    <comp ref="T1">
-      <value>2N2222</value>
-      <libsource lib="device" part="Q_NPN_BCE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>576BE9ED</tstamp>
-    </comp>
-    <comp ref="T2">
-      <value>2N2907A</value>
-      <libsource lib="device" part="Q_PNP_BCE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>576BEED3</tstamp>
-    </comp>
     <comp ref="R4">
       <value>330</value>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>576C04FC</tstamp>
-    </comp>
-    <comp ref="T3">
-      <value>2N2907A</value>
-      <libsource lib="device" part="Q_PNP_BCE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>576C07B0</tstamp>
     </comp>
     <comp ref="C2">
       <value>1nF</value>
@@ -78,6 +60,24 @@
       <libsource lib="device" part="C"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>576C0CD3</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q2N2222</value>
+      <libsource lib="echopen" part="Q2N2222"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57B43494</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>Q2N2907</value>
+      <libsource lib="echopen" part="Q2N2907"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57B43524</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>Q2N2222</value>
+      <libsource lib="echopen" part="Q2N2222"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57B435C4</tstamp>
     </comp>
   </components>
   <libparts>
@@ -99,28 +99,31 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Q_NPN_BCE">
-      <description>Transistor NPN (general)</description>
+    <libpart lib="echopen" part="Q2N2222">
+      <description>40V Vce, 1A Ic, NPN, General Purpose Transistor, TO-92</description>
+      <docs>http://www.fairchildsemi.com/ds/PN/PN2222A.pdf</docs>
+      <footprints>
+        <fp>TO-92*</fp>
+      </footprints>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">Q_NPN_BCE</field>
+        <field name="Value">Q2N2222</field>
       </fields>
       <pins>
-        <pin num="1" name="B" type="input"/>
-        <pin num="2" name="C" type="passive"/>
-        <pin num="3" name="E" type="passive"/>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Q_PNP_BCE">
-      <description>Transistor PNP (general)</description>
+    <libpart lib="echopen" part="Q2N2907">
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">Q_PNP_BCE</field>
+        <field name="Value">Q2N2907</field>
       </fields>
       <pins>
-        <pin num="1" name="B" type="input"/>
-        <pin num="2" name="C" type="passive"/>
-        <pin num="3" name="E" type="passive"/>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="R">
@@ -143,47 +146,50 @@
     <library logical="device">
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
+    <library logical="echopen">
+      <uri>/home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(T1-Pad3)">
-      <node ref="T1" pin="3"/>
-      <node ref="T2" pin="3"/>
-    </net>
-    <net code="2" name="/-5V">
-      <node ref="R4" pin="2"/>
-      <node ref="C3" pin="1"/>
-      <node ref="T2" pin="2"/>
-    </net>
-    <net code="3" name="Earth">
+    <net code="1" name="Earth">
       <node ref="R2" pin="2"/>
+    </net>
+    <net code="4" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="5" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+      <node ref="Q1" pin="2"/>
     </net>
     <net code="6" name="Input">
       <node ref="C1" pin="2"/>
     </net>
     <net code="7" name="Net-(R1-Pad2)">
-      <node ref="R1" pin="2"/>
       <node ref="R2" pin="1"/>
+      <node ref="R1" pin="2"/>
     </net>
     <net code="8" name="/+5V">
-      <node ref="T3" pin="3"/>
-      <node ref="R1" pin="1"/>
       <node ref="R3" pin="1"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="R1" pin="1"/>
     </net>
-    <net code="9" name="Net-(C1-Pad1)">
-      <node ref="C1" pin="1"/>
-      <node ref="T1" pin="1"/>
+    <net code="9" name="/-5V">
+      <node ref="C3" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="Q2" pin="3"/>
     </net>
     <net code="10" name="Output">
-      <node ref="T2" pin="1"/>
-      <node ref="T3" pin="2"/>
-      <node ref="C3" pin="2"/>
       <node ref="C2" pin="1"/>
       <node ref="R4" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="Q2" pin="2"/>
     </net>
     <net code="11" name="Net-(C2-Pad2)">
-      <node ref="T3" pin="1"/>
-      <node ref="T1" pin="2"/>
+      <node ref="Q1" pin="3"/>
       <node ref="C2" pin="2"/>
+      <node ref="Q3" pin="2"/>
       <node ref="R3" pin="2"/>
     </net>
   </nets>

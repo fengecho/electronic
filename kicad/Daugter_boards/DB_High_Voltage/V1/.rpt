@@ -1,17 +1,8 @@
 ** Drc report for /home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_High_Voltage/V1/DB_HV_V1.kicad_pcb **
-** Created on 2016-08-16 13:14:48 **
+** Created on 2016-08-17 10:07:02 **
 
-** Found 1 DRC errors **
-ErrType(4): Track near pad
-    @ (4,1999 in,4,9999 in): Track 0,0098 in, net [Net-(C7-Pad2)] (9) on layer B.Cu, length: 0,3040 in
-    @ (3,9984 in,4,9500 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of C9
+** Found 0 DRC errors **
 
-** Found 2 unconnected pads **
-ErrType(2): Unconnected pads
-    @ (4,8000 in,3,5000 in): Pad 2 on B.Cu, Non-copper of P4 net GND
-    @ (4,8000 in,3,5000 in): Pad 2 on F.Cu, Non-copper of P4
-ErrType(2): Unconnected pads
-    @ (4,4000 in,3,5000 in): Pad 2 on B.Cu, Non-copper of P4 net GND
-    @ (4,4000 in,3,5000 in): Pad 2 on F.Cu, Non-copper of P4
+** Found 0 unconnected pads **
 
 ** End of Report **

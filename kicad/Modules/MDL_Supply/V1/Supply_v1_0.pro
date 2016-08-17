@@ -1,4 +1,4 @@
-update=mer. 10 août 2016 12:40:00 CEST
+update=mer. 17 août 2016 11:35:37 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,4 +68,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen
+LibName30=echopen

@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:projet-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -204,23 +205,16 @@ Text Label 7200 4800 0    60   ~ 0
 -5V
 Text Label 7200 3150 0    60   ~ 0
 +5V
-Text Label 7200 4350 0    60   ~ 0
-Out
-Text Label 4650 3850 0    60   ~ 0
-In
-Connection ~ 7200 3150
 Connection ~ 7200 4350
-Connection ~ 7200 4800
-Connection ~ 4650 3850
 Wire Wire Line
 	5700 4800 7200 4800
 Wire Wire Line
 	5250 4450 5250 4750
 $Comp
-L Earth #PWR?
+L Earth #PWR01
 U 1 1 576C1498
 P 5250 4750
-F 0 "#PWR?" H 5250 4500 50  0001 C CNN
+F 0 "#PWR01" H 5250 4500 50  0001 C CNN
 F 1 "Earth" H 5250 4600 50  0001 C CNN
 F 2 "" H 5250 4750 50  0000 C CNN
 F 3 "" H 5250 4750 50  0000 C CNN
@@ -231,4 +225,8 @@ Text Label 7450 7500 0    60   ~ 12
 Detection_d'enveloppe
 Text Label 8150 7650 0    60   ~ 12
 23/06/2016
+Text GLabel 4650 3850 0    60   Input ~ 0
+Input
+Text GLabel 7200 4350 2    60   Input ~ 0
+Output
 $EndSCHEMATC

@@ -1,6 +1,6 @@
 Source,/home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_High_Voltage/V1/DB_HV_V1.sch
 Kicad Rev,Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable
-Generated Date,mar. 16 août 2016 13:16:40 CEST
+Generated Date,mer. 17 août 2016 10:23:11 CEST
 
 Title,Not Set
 Company,Not Set
@@ -14,12 +14,9 @@ R2,12k,device,R
 R1,2.2k,device,R
 C2,47n,device,C
 R3,3.3k,device,R
-Q3,2N2907,device,Q_PNP_BCE
-Q2,2N2222,device,Q_NPN_BCE
 R4,1.8k,device,R
-Q1,2N2222,device,Q_NPN_BCE
 C3,47u,device,CP
-D1,4001,device,D
+D1,1N4001,device,D
 C4,4.7u,device,CP
 D2,1N5062,device,D
 C5,4.7u,device,CP
@@ -40,9 +37,12 @@ C12,4.7u,device,CP
 D10,1N5062,device,D
 C13,4.7u,device,CP
 D11,1N5062,device,D
-D12,4001,device,D
 C14,4.7u,device,CP
 P1,CONN_01X19,conn,CONN_01X19
 P3,CONN_01X19,conn,CONN_01X19
 P2,CONN_01X02,conn,CONN_01X02
 P4,SMA,echopen,SMA
+D12,1N4001,device,D
+Q3,Q2N2907,echopen,Q2N2907
+Q1,Q2N2222,echopen,Q2N2222
+Q2,Q2N2222,echopen,Q2N2222

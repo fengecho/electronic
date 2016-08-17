@@ -2,8 +2,8 @@
 <export version="D">
   <design>
     <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_High_Voltage_Circuit/V1/MDL_HVC_V1.sch</source>
-    <date>mer. 03 août 2016 19:17:21 CEST</date>
-    <tool>Eeschema 4.0.2+e4-6225~38~ubuntu16.04.1-stable</tool>
+    <date>mer. 17 août 2016 11:17:54 CEST</date>
+    <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -55,29 +55,11 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57A21CB1</tstamp>
     </comp>
-    <comp ref="2N2">
-      <value>Q_PNP_BCE</value>
-      <libsource lib="device" part="Q_PNP_BCE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>57A21CAB</tstamp>
-    </comp>
-    <comp ref="2N2222_1">
-      <value>Q_NPN_BCE</value>
-      <libsource lib="device" part="Q_NPN_BCE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>57A21CAA</tstamp>
-    </comp>
     <comp ref="R4">
       <value>1.8k</value>
       <libsource lib="device" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57A21CA9</tstamp>
-    </comp>
-    <comp ref="2N1">
-      <value>Q_NPN_BCE</value>
-      <libsource lib="device" part="Q_NPN_BCE"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>57A21CA8</tstamp>
     </comp>
     <comp ref="C3">
       <value>47u</value>
@@ -223,6 +205,24 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>57A286FF</tstamp>
     </comp>
+    <comp ref="Q1">
+      <value>Q2N2222</value>
+      <libsource lib="echopen" part="Q2N2222"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57B42EE7</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>Q2N2222</value>
+      <libsource lib="echopen" part="Q2N2222"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57B42F68</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>Q2N2907</value>
+      <libsource lib="echopen" part="Q2N2907"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57B42FF3</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="device" part="C">
@@ -297,28 +297,31 @@
         <pin num="8" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Q_NPN_BCE">
-      <description>Transistor NPN (general)</description>
+    <libpart lib="echopen" part="Q2N2222">
+      <description>40V Vce, 1A Ic, NPN, General Purpose Transistor, TO-92</description>
+      <docs>http://www.fairchildsemi.com/ds/PN/PN2222A.pdf</docs>
+      <footprints>
+        <fp>TO-92*</fp>
+      </footprints>
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">Q_NPN_BCE</field>
+        <field name="Value">Q2N2222</field>
       </fields>
       <pins>
-        <pin num="1" name="B" type="input"/>
-        <pin num="2" name="C" type="passive"/>
-        <pin num="3" name="E" type="passive"/>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="device" part="Q_PNP_BCE">
-      <description>Transistor PNP (general)</description>
+    <libpart lib="echopen" part="Q2N2907">
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">Q_PNP_BCE</field>
+        <field name="Value">Q2N2907</field>
       </fields>
       <pins>
-        <pin num="1" name="B" type="input"/>
-        <pin num="2" name="C" type="passive"/>
-        <pin num="3" name="E" type="passive"/>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="R">
@@ -338,132 +341,135 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
+    <library logical="echopen">
+      <uri>/home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen.lib</uri>
     </library>
     <library logical="linear">
       <uri>/usr/share/kicad/library/linear.lib</uri>
     </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(C6-Pad2)">
-      <node ref="C6" pin="2"/>
-      <node ref="D4" pin="2"/>
-      <node ref="C8" pin="1"/>
-      <node ref="D5" pin="1"/>
-    </net>
-    <net code="2" name="Net-(C7-Pad2)">
-      <node ref="D5" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="C9" pin="1"/>
-      <node ref="D6" pin="1"/>
-    </net>
-    <net code="3" name="Net-(C10-Pad1)">
-      <node ref="D6" pin="2"/>
-      <node ref="C8" pin="2"/>
+    <net code="1" name="Net-(C10-Pad1)">
       <node ref="C10" pin="1"/>
+      <node ref="C8" pin="2"/>
+      <node ref="D6" pin="2"/>
       <node ref="D7" pin="1"/>
     </net>
+    <net code="2" name="Net-(C11-Pad1)">
+      <node ref="D8" pin="1"/>
+      <node ref="D7" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C6-Pad2)">
+      <node ref="D5" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C8" pin="1"/>
+    </net>
     <net code="4" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+      <node ref="D2" pin="2"/>
       <node ref="D3" pin="1"/>
       <node ref="C6" pin="1"/>
-      <node ref="D2" pin="2"/>
-      <node ref="C4" pin="2"/>
     </net>
     <net code="5" name="Net-(C5-Pad2)">
+      <node ref="C5" pin="2"/>
+      <node ref="D3" pin="2"/>
       <node ref="C7" pin="1"/>
       <node ref="D4" pin="1"/>
-      <node ref="D3" pin="2"/>
-      <node ref="C5" pin="2"/>
     </net>
-    <net code="6" name="Net-(C13-Pad2)">
+    <net code="6" name="Net-(C7-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="7" name="Net-(C13-Pad2)">
+      <node ref="C13" pin="2"/>
       <node ref="D12" pin="1"/>
       <node ref="D11" pin="2"/>
-      <node ref="C13" pin="2"/>
     </net>
-    <net code="7" name="Net-(C12-Pad2)">
+    <net code="8" name="Output">
+      <node ref="D12" pin="2"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="9" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="10" name="GND">
+      <node ref="C2" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="Q3" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="11" name="Net-(C10-Pad2)">
+      <node ref="C12" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="D8" pin="2"/>
+    </net>
+    <net code="12" name="Net-(C12-Pad2)">
       <node ref="D11" pin="1"/>
       <node ref="D10" pin="2"/>
       <node ref="C12" pin="2"/>
     </net>
-    <net code="8" name="Output">
-      <node ref="C14" pin="2"/>
-      <node ref="D12" pin="2"/>
-    </net>
-    <net code="9" name="Net-(C11-Pad1)">
-      <node ref="C11" pin="1"/>
-      <node ref="D8" pin="1"/>
-      <node ref="C9" pin="2"/>
-      <node ref="D7" pin="2"/>
-    </net>
-    <net code="10" name="Net-(C10-Pad2)">
-      <node ref="D9" pin="1"/>
-      <node ref="D8" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C12" pin="1"/>
-    </net>
-    <net code="11" name="Net-(C11-Pad2)">
+    <net code="13" name="Net-(C11-Pad2)">
+      <node ref="D10" pin="1"/>
+      <node ref="C13" pin="1"/>
       <node ref="D9" pin="2"/>
       <node ref="C11" pin="2"/>
-      <node ref="C13" pin="1"/>
-      <node ref="D10" pin="1"/>
     </net>
-    <net code="12" name="Net-(C1-Pad2)">
-      <node ref="U1" pin="5"/>
+    <net code="14" name="Net-(C1-Pad2)">
       <node ref="C1" pin="2"/>
+      <node ref="U1" pin="5"/>
     </net>
-    <net code="20" name="Net-(C2-Pad2)">
-      <node ref="U1" pin="6"/>
+    <net code="22" name="Net-(C2-Pad2)">
       <node ref="U1" pin="2"/>
       <node ref="R2" pin="2"/>
+      <node ref="U1" pin="6"/>
       <node ref="C2" pin="2"/>
     </net>
-    <net code="21" name="Net-(R3-Pad2)">
-      <node ref="R3" pin="2"/>
+    <net code="23" name="Net-(R3-Pad2)">
       <node ref="U1" pin="3"/>
+      <node ref="R3" pin="2"/>
     </net>
-    <net code="22" name="Net-(R1-Pad1)">
+    <net code="24" name="Net-(R1-Pad1)">
       <node ref="U1" pin="7"/>
-      <node ref="R1" pin="1"/>
       <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
     </net>
-    <net code="23" name="VCC">
-      <node ref="2N2222_1" pin="2"/>
-      <node ref="R4" pin="1"/>
-      <node ref="R1" pin="2"/>
-      <node ref="U1" pin="8"/>
-      <node ref="U1" pin="4"/>
-    </net>
-    <net code="24" name="Net-(2N1-Pad1)">
-      <node ref="2N1" pin="1"/>
-      <node ref="R3" pin="1"/>
-    </net>
-    <net code="27" name="Net-(2N2-Pad3)">
+    <net code="26" name="Net-(C3-Pad1)">
       <node ref="C3" pin="1"/>
-      <node ref="2N2222_1" pin="3"/>
-      <node ref="2N2" pin="3"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="Q3" pin="1"/>
     </net>
-    <net code="28" name="Net-(C3-Pad2)">
-      <node ref="D1" pin="2"/>
+    <net code="27" name="Net-(C3-Pad2)">
+      <node ref="C5" pin="1"/>
       <node ref="C3" pin="2"/>
       <node ref="D2" pin="1"/>
-      <node ref="C5" pin="1"/>
+      <node ref="D1" pin="2"/>
     </net>
-    <net code="29" name="Net-(2N1-Pad2)">
-      <node ref="2N2" pin="1"/>
-      <node ref="2N1" pin="2"/>
+    <net code="28" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3"/>
       <node ref="R4" pin="2"/>
-      <node ref="2N2222_1" pin="1"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q3" pin="2"/>
     </net>
-    <net code="30" name="GND">
-      <node ref="U1" pin="1"/>
-      <node ref="C14" pin="1"/>
-      <node ref="2N2" pin="2"/>
-      <node ref="C2" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="2N1" pin="3"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C4" pin="1"/>
+    <net code="29" name="VCC">
+      <node ref="U1" pin="8"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="4"/>
+      <node ref="R1" pin="2"/>
+      <node ref="Q2" pin="3"/>
     </net>
   </nets>
 </export>
