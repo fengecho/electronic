@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_High_Voltage_Circuit/V1/MDL_HVC_V1.sch</source>
-    <date>mer. 17 août 2016 12:12:04 CEST</date>
+    <date>mer. 17 août 2016 16:00:08 CEST</date>
     <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -206,25 +206,53 @@
       <tstamp>57A286FF</tstamp>
     </comp>
     <comp ref="Q1">
-      <value>Q2N2222</value>
-      <libsource lib="echopen" part="Q2N2222"/>
+      <value>2N2222</value>
+      <libsource lib="echopen" part="2N2222"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57B42EE7</tstamp>
+      <tstamp>57B46F76</tstamp>
     </comp>
     <comp ref="Q2">
-      <value>Q2N2222</value>
-      <libsource lib="echopen" part="Q2N2222"/>
+      <value>2N2222</value>
+      <libsource lib="echopen" part="2N2222"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57B42F68</tstamp>
+      <tstamp>57B47024</tstamp>
     </comp>
     <comp ref="Q3">
-      <value>Q2N2907</value>
-      <libsource lib="echopen" part="Q2N2907"/>
+      <value>2N2907</value>
+      <libsource lib="echopen" part="2N2907"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>57B42FF3</tstamp>
+      <tstamp>57B470CA</tstamp>
     </comp>
   </components>
   <libparts>
+    <libpart lib="echopen" part="2N2222">
+      <footprints>
+        <fp>TO-18</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N2222</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="echopen" part="2N2907">
+      <footprints>
+        <fp>TO-18</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N2907</field>
+      </fields>
+      <pins>
+        <pin num="1" name="E" type="passive"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="device" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -295,36 +323,6 @@
         <pin num="6" name="THR" type="input"/>
         <pin num="7" name="DIS" type="input"/>
         <pin num="8" name="VCC" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="echopen" part="Q2N2222">
-      <description>40V Vce, 1A Ic, NPN, General Purpose Transistor, TO-92</description>
-      <docs>http://www.fairchildsemi.com/ds/PN/PN2222A.pdf</docs>
-      <footprints>
-        <fp>TO-18</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">Q2N2222</field>
-      </fields>
-      <pins>
-        <pin num="1" name="E" type="passive"/>
-        <pin num="2" name="B" type="input"/>
-        <pin num="3" name="C" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="echopen" part="Q2N2907">
-      <footprints>
-        <fp>TO-18</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">Q2N2907</field>
-      </fields>
-      <pins>
-        <pin num="1" name="E" type="passive"/>
-        <pin num="2" name="B" type="input"/>
-        <pin num="3" name="C" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="device" part="R">

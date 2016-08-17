@@ -1,6 +1,6 @@
 Source,/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_High_Voltage_Circuit/V1/MDL_HVC_V1.sch
 Kicad Rev,Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable
-Generated Date,mer. 17 août 2016 12:12:04 CEST
+Generated Date,mer. 17 août 2016 16:00:08 CEST
 
 Title,Not Set
 Company,Not Set
@@ -39,6 +39,6 @@ C13,4.7u,device,CP
 D11,1N5062,device,D
 D12,1N4001,device,D
 C14,4.7u,device,CP
-Q1,Q2N2222,echopen,Q2N2222
-Q2,Q2N2222,echopen,Q2N2222
-Q3,Q2N2907,echopen,Q2N2907
+Q1,2N2222,echopen,2N2222
+Q2,2N2222,echopen,2N2222
+Q3,2N2907,echopen,2N2907
