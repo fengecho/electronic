@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/echopen/Bureau/GitHub/electronic/kicad/Modules/MDL_Motor_control/V1/MDL_Motor_control_V1.sch</source>
-    <date>mer. 17 août 2016 11:20:44 CEST</date>
+    <date>mer. 17 août 2016 12:13:31 CEST</date>
     <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -111,7 +111,7 @@
       <description>40V Vce, 1A Ic, NPN, General Purpose Transistor, TO-92</description>
       <docs>http://www.fairchildsemi.com/ds/PN/PN2222A.pdf</docs>
       <footprints>
-        <fp>TO-92*</fp>
+        <fp>TO-18</fp>
       </footprints>
       <fields>
         <field name="Reference">Q</field>
