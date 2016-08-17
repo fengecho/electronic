@@ -1,29 +1,8 @@
 ** Drc report for /home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Envelope_detector/V1/DB_Envelope_detector_V1.kicad_pcb **
-** Created on 2016-08-11 09:48:44 **
+** Created on 2016-08-17 12:35:18 **
 
 ** Found 0 DRC errors **
 
-** Found 7 unconnected pads **
-ErrType(2): Unconnected pads
-    @ (144,779 mm,119,383 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of D1 net Net-(C1-Pad1)
-    @ (144,780 mm,107,950 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of C1
-ErrType(2): Unconnected pads
-    @ (137,160 mm,115,570 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of R1 net Net-(C1-Pad1)
-    @ (144,779 mm,119,383 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of D1
-ErrType(2): Unconnected pads
-    @ (151,130 mm,115,570 mm): Pad 5 on F.Cu, B.Cu, Internal, Non-copper of P2 net Net-(C1-Pad1)
-    @ (144,779 mm,119,383 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of D1
-ErrType(2): Unconnected pads
-    @ (137,160 mm,105,410 mm): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of R1 net Net-(C1-Pad2)
-    @ (144,780 mm,105,450 mm): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of C1
-ErrType(2): Unconnected pads
-    @ (151,130 mm,105,410 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of P2 net Net-(C1-Pad2)
-    @ (144,780 mm,105,450 mm): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of C1
-ErrType(2): Unconnected pads
-    @ (130,810 mm,105,410 mm): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of P1 net Net-(C1-Pad2)
-    @ (137,160 mm,105,410 mm): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of R1
-ErrType(2): Unconnected pads
-    @ (134,619 mm,119,383 mm): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of D1 net Net-(D1-Pad2)
-    @ (130,810 mm,113,030 mm): Pad 4 on F.Cu, B.Cu, Internal, Non-copper of P1
+** Found 0 unconnected pads **
 
 ** End of Report **

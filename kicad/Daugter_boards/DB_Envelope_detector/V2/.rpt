@@ -1,8 +1,47 @@
 ** Drc report for /home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Envelope_detector/V2/DB_Envelope_detector_V2.kicad_pcb **
-** Created on 2016-08-11 16:34:59 **
+** Created on 2016-08-17 12:40:20 **
 
-** Found 0 DRC errors **
+** Found 6 DRC errors **
+ErrType(19): Pad near pad
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q3
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q1
+ErrType(19): Pad near pad
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q1
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q2
+ErrType(19): Pad near pad
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q1
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q2
+ErrType(19): Pad near pad
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q2
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q3
+ErrType(19): Pad near pad
+    @ (2,9500 in,5,0467 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of Q1
+    @ (2,9500 in,5,0467 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of Q3
+ErrType(19): Pad near pad
+    @ (2,9500 in,5,0467 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of Q3
+    @ (2,9500 in,5,0467 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of Q2
 
-** Found 0 unconnected pads **
+** Found 7 unconnected pads **
+ErrType(2): Unconnected pads
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q1 net Net-(C1-Pad1)
+    @ (2,8500 in,3,5500 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of T1
+ErrType(2): Unconnected pads
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q2 net Net-(C2-Pad1)
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q3
+ErrType(2): Unconnected pads
+    @ (2,6000 in,4,2531 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of C3 net Net-(C2-Pad1)
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q3
+ErrType(2): Unconnected pads
+    @ (3,0031 in,3,6000 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of C2 net Net-(C2-Pad2)
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q3
+ErrType(2): Unconnected pads
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q1 net Net-(C2-Pad2)
+    @ (2,9000 in,4,9967 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of Q3
+ErrType(2): Unconnected pads
+    @ (2,8500 in,4,4000 in): Pad 2 on F.Cu, B.Cu, Internal, Non-copper of R4 net Net-(C3-Pad1)
+    @ (2,8500 in,5,0467 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of Q2
+ErrType(2): Unconnected pads
+    @ (2,9500 in,5,0467 in): Pad 1 on F.Cu, B.Cu, Internal, Non-copper of Q3 net Net-(P2-Pad2)
+    @ (3,1000 in,3,0500 in): Pad 3 on F.Cu, B.Cu, Internal, Non-copper of T3
 
 ** End of Report **
