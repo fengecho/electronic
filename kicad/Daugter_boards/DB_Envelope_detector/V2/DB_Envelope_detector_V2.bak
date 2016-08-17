@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:echopen
 LIBS:DB_Envelope_detector_V2-cache
 EELAYER 25 0
 EELAYER END
@@ -87,32 +88,10 @@ F 3 "" H 5700 3400 50  0000 C CNN
 	1    5700 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Q_NPN_BCE T1
-U 1 1 576BE9ED
-P 5600 3850
-F 0 "T1" H 5850 3950 50  0000 R CNN
-F 1 "2N2222" H 5900 3800 50  0000 R BNN
-F 2 "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-II_BigPads" H 5800 3950 50  0001 C CNN
-F 3 "" H 5600 3850 50  0000 C CNN
-	1    5600 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5250 3550 5250 4150
 Wire Wire Line
-	5400 3850 4950 3850
-$Comp
-L Q_PNP_BCE T2
-U 1 1 576BEED3
-P 5800 4300
-F 0 "T2" H 5750 4450 50  0000 C CNN
-F 1 "2N2907A" H 5650 4150 50  0000 C CNN
-F 2 "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-II_BigPads" H 6000 4400 50  0001 C CNN
-F 3 "" H 5800 4300 50  0000 C CNN
-	1    5800 4300
-	-1   0    0    1   
-$EndComp
+	4950 3850 5400 3850
 $Comp
 L R R4
 U 1 1 576C04FC
@@ -124,26 +103,15 @@ F 3 "" H 6350 4550 50  0000 C CNN
 	1    6350 4550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Q_PNP_BCE T3
-U 1 1 576C07B0
-P 6250 3600
-F 0 "T3" H 6200 3750 50  0000 C CNN
-F 1 "2N2907A" H 6100 3450 50  0000 C CNN
-F 2 "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-II_BigPads" H 6450 3700 50  0001 C CNN
-F 3 "" H 6250 3600 50  0000 C CNN
-	1    6250 3600
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5250 3250 5250 3150
 Wire Wire Line
 	5700 3250 5700 3150
 Connection ~ 5700 3150
 Wire Wire Line
-	5700 3650 5700 3550
+	5700 3550 5700 3650
 Wire Wire Line
-	6050 3600 5700 3600
+	5700 3600 6050 3600
 Connection ~ 5700 3600
 Wire Wire Line
 	6350 3800 6350 4400
@@ -176,7 +144,7 @@ Wire Wire Line
 	6250 3850 6350 3850
 Connection ~ 6350 3850
 Wire Wire Line
-	6350 3400 6350 3150
+	6350 3150 6350 3400
 Connection ~ 6350 3150
 Wire Wire Line
 	5250 3150 7750 3150
@@ -195,7 +163,7 @@ F 3 "" H 6750 4550 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6750 4700 6750 4800
+	6750 4800 6750 4700
 Connection ~ 6750 4800
 Wire Wire Line
 	6750 4400 6750 4350
@@ -203,7 +171,7 @@ Connection ~ 6750 4350
 Wire Wire Line
 	5700 4800 7450 4800
 Wire Wire Line
-	5250 4450 5250 4950
+	5250 4950 5250 4450
 Text Label 7450 7500 0    60   ~ 12
 Detection_d'enveloppe
 Text Label 8150 7650 0    60   ~ 12
@@ -312,4 +280,37 @@ Connection ~ 5250 3850
 Connection ~ 6350 4250
 Connection ~ 6350 4300
 NoConn ~ 3650 3950
+$Comp
+L Q2N2222 Q1
+U 1 1 57B43F1F
+P 5600 3850
+F 0 "Q1" H 5800 3925 50  0000 L CNN
+F 1 "Q2N2222" H 5800 3850 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-18_3Pin" H 5800 3775 50  0001 L CIN
+F 3 "" H 5600 3850 50  0000 L CNN
+	1    5600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q2N2907 Q2
+U 1 1 57B43F5E
+P 5800 4300
+F 0 "Q2" H 6000 4375 50  0000 L CNN
+F 1 "Q2N2907" H 6000 4300 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-18_3Pin" H 6100 4150 50  0001 L CIN
+F 3 "" H 5800 4300 50  0000 L CNN
+	1    5800 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q2N2907 Q3
+U 1 1 57B4408A
+P 6250 3600
+F 0 "Q3" H 6450 3675 50  0000 L CNN
+F 1 "Q2N2907" H 6450 3600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-18_3Pin" H 6550 3450 50  0001 L CIN
+F 3 "" H 6250 3600 50  0000 L CNN
+	1    6250 3600
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

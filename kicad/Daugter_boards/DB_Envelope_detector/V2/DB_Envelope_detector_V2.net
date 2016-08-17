@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/echopen/Bureau/GitHub/electronic/kicad/Daugter_boards/DB_Envelope_detector/V2/DB_Envelope_detector_V2.sch)
-    (date "mer. 17 août 2016 12:38:34 CEST")
+    (date "mer. 17 août 2016 13:03:19 CEST")
     (tool "Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -70,24 +70,44 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 57A85C38))
     (comp (ref Q1)
-      (value Q2N2222)
+      (value 2N2222)
       (footprint TO_SOT_Packages_THT:TO-18_3Pin)
-      (libsource (lib echopen) (part Q2N2222))
+      (libsource (lib echopen) (part 2N2222))
       (sheetpath (names /) (tstamps /))
-      (tstamp 57B43F1F))
+      (tstamp 57B448C8))
     (comp (ref Q2)
-      (value Q2N2907)
+      (value 2N2907)
       (footprint TO_SOT_Packages_THT:TO-18_3Pin)
-      (libsource (lib echopen) (part Q2N2907))
+      (libsource (lib echopen) (part 2N2907))
       (sheetpath (names /) (tstamps /))
-      (tstamp 57B43F5E))
+      (tstamp 57B44946))
     (comp (ref Q3)
-      (value Q2N2907)
+      (value 2N2907)
       (footprint TO_SOT_Packages_THT:TO-18_3Pin)
-      (libsource (lib echopen) (part Q2N2907))
+      (libsource (lib echopen) (part 2N2907))
       (sheetpath (names /) (tstamps /))
-      (tstamp 57B4408A)))
+      (tstamp 57B44A85)))
   (libparts
+    (libpart (lib echopen) (part 2N2222)
+      (footprints
+        (fp TO-18))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) 2N2222))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name C) (type passive))))
+    (libpart (lib echopen) (part 2N2907)
+      (footprints
+        (fp TO-18))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) 2N2907))
+      (pins
+        (pin (num 1) (name E) (type passive))
+        (pin (num 2) (name B) (type input))
+        (pin (num 3) (name C) (type passive))))
     (libpart (lib device) (part C)
       (description "Unpolarized capacitor")
       (footprints
@@ -132,28 +152,6 @@
         (pin (num 17) (name P17) (type passive))
         (pin (num 18) (name P18) (type passive))
         (pin (num 19) (name P19) (type passive))))
-    (libpart (lib echopen) (part Q2N2222)
-      (description "40V Vce, 1A Ic, NPN, General Purpose Transistor, TO-92")
-      (docs http://www.fairchildsemi.com/ds/PN/PN2222A.pdf)
-      (footprints
-        (fp TO-18))
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) Q2N2222))
-      (pins
-        (pin (num 1) (name E) (type passive))
-        (pin (num 2) (name B) (type input))
-        (pin (num 3) (name C) (type passive))))
-    (libpart (lib echopen) (part Q2N2907)
-      (footprints
-        (fp TO-18))
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) Q2N2907))
-      (pins
-        (pin (num 1) (name E) (type passive))
-        (pin (num 2) (name B) (type input))
-        (pin (num 3) (name C) (type passive))))
     (libpart (lib device) (part R)
       (description Resistor)
       (footprints
@@ -168,10 +166,10 @@
   (libraries
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
-    (library (logical echopen)
-      (uri /home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical echopen)
+      (uri /home/echopen/Bureau/GitHub/electronic/kicad/Librairy/echopen.lib)))
   (nets
     (net (code 4) (name "Net-(P1-Pad19)")
       (node (ref P1) (pin 19)))
